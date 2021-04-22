@@ -1,6 +1,6 @@
 job("job-dsl-artifactory-freestyle-generic-example") {
     scm {
-        git("https://github.com/jfrog/project-examples.git", "master")
+        git("https://github.com/archick12/testForJenkinsDSL.git", "master")
     }
 
     configure { node ->
