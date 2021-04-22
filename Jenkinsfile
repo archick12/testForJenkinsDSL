@@ -4,12 +4,12 @@ pipelineJob('job-dsl-plugin') {
       scm {
         git {
           remote {
-            url('https://github.com/jenkinsci/job-dsl-plugin.git')
+            url('https://github.com/archick12/testForJenkinsDSL.git')
           }
           branch('*/master')
         }
       }
-      lightweight()
+      echo "test"
     }
   }
 }
