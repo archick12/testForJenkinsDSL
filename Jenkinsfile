@@ -11,6 +11,7 @@ job("job-dsl-artifactory-freestyle-generic-example") {
 
               stage('QA - Read JSON') {
               checkout scm
+              
             }
         }
     }
