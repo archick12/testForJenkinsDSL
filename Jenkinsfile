@@ -1,21 +1,15 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
+pipelineJob('job-dsl-plugin') {
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url('https://github.com/jenkinsci/job-dsl-plugin.git')
+          }
+          branch('*/master')
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+      }
+      lightweight()
     }
+  }
 }
